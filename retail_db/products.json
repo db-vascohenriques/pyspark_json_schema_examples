@@ -1,6 +1,6 @@
 {
   "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/products.json",
-  "$schema": "http://json-schema.org/schema",
+  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
   "title": "retail_db.products",
   "description": "Product Dimension",
   "type": "object",

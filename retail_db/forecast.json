@@ -1,6 +1,6 @@
 {
   "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/forecast.json",
-  "$schema": "http://json-schema.org/schema",
+  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
   "title": "retail_db.forecast",
   "description": "Forecast for sales and inventory",
   "type": "object",

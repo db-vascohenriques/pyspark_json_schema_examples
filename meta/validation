@@ -26,6 +26,13 @@
         }
       ]
     },
+    "objectType": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/objectTypes"
+        }
+      ]
+    },
     "const": true,
     "enum": {
       "type": "array",
@@ -108,6 +115,39 @@
         "number",
         "object",
         "string"
+      ]
+    },
+    "objectTypes": {
+      "enum": [
+        "catalog",
+        "database",
+        "table",
+        "view",
+        "column",
+        "nestedField"
+      ]
+    },
+    "sparkSQLTypes": {
+      "enum": [
+        "varchar",
+        "char",
+        "string",
+        "byte",
+        "short",
+        "int",
+        "long",
+        "bigint",
+        "double",
+        "float",
+        "real",
+        "decimal",
+        "boolean",
+        "array",
+        "binary",
+        "date",
+        "timestamp",
+        "map",
+        "struct"
       ]
     },
     "stringArray": {
