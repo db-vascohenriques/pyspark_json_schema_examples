@@ -38,13 +38,13 @@
     },
     "forecast_on_hand_inventory": {
       "type": "integer",
-      "description": "Units predicted to be sold on a given date",
+      "description": "Predicted units on hand",
       "objectType": "column",
       "sparkSQLType": "int"
     },
     "forecast_gross_revenue": {
       "type": "integer",
-      "description": "Units predicted to be sold on a given date",
+      "description": "Predicted total value of sales before tax",
       "objectType": "column",
       "sparkSQLType": "int"
     }
