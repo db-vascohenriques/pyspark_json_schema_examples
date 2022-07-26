@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
-  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/meta-data.json",
+  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema",
+  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/meta-data",
   "$vocabulary": {
     "https://json-schema.org/draft/2020-12/vocab/meta-data": true
   },

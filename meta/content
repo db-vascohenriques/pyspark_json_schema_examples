@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema",
+  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/content",
+  "$vocabulary": {
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/content": true
+  },
+  "$dynamicAnchor": "meta",
+
+  "title": "Content vocabulary meta-schema",
+
+  "type": ["object", "boolean"],
+  "properties": {
+    "contentEncoding": { "type": "string" },
+    "contentMediaType": { "type": "string" },
+    "contentSchema": { "$dynamicRef": "#meta" }
+  }
+}
