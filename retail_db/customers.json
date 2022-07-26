@@ -36,6 +36,12 @@
       "objectType": "column",
       "sparkSQLType": "date"
     },
+    "level_of_education": {
+      "type": "string",
+      "description": "N or None, P or Primary, S or Secondary, B or Bachelors, M or Masters, P or PhD",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
     "sincedate": {
       "type": "object",
       "description": "Customer Date of account creation",
