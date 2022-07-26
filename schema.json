@@ -2,16 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
   "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
   "$vocabulary": {
-    "https://json-schema.org/draft/2020-12/vocab/core": true,
-    "https://json-schema.org/draft/2020-12/vocab/applicator": true,
-    "https://json-schema.org/draft/2020-12/vocab/unevaluated": true,
-    "https://json-schema.org/draft/2020-12/vocab/validation": true,
-    "https://json-schema.org/draft/2020-12/vocab/meta-data": true,
-    "https://json-schema.org/draft/2020-12/vocab/format-annotation": true,
-    "https://json-schema.org/draft/2020-12/vocab/content": true
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/core.json": true,
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/applicator.json": true,
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/unevaluated.json": true,
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/validation.json": true,
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/meta-data.json": true,
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/format-annotation.json": true,
+    "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/content.json": true
   },
   "$dynamicAnchor": "meta",
-
   "title": "Core and Validation specifications meta-schema",
   "allOf": [
     { "$ref": "meta/core" },
