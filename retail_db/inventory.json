@@ -1,0 +1,45 @@
+{
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/inventory.json",
+  "$schema": "http://json-schema.org/schema",
+  "title": "retail_db.inventory",
+  "description": "Inventory by product by outlet per day",
+  "properties": {
+    "date": {
+      "type": "object",
+      "description": "Inventory Date",
+      "objectType": "column",
+      "sparkSQLType": "date"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "Foreign key to product dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "outlet_id": {
+      "type": "string",
+      "description": "Foreign key to outlet dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "on_hand_units": {
+      "type": "integer",
+      "description": "Units available in store",
+      "objectType": "column",
+      "sparkSQLType": "int"
+    },
+    "in_transit_units": {
+      "type": "integer",
+      "description": "Units on the way to store",
+      "objectType": "column",
+      "sparkSQLType": "int"
+    },
+    "reserved_units": {
+      "type": "integer",
+      "description": "Frozen stock by customer reservations",
+      "objectType": "column",
+      "sparkSQLType": "int"
+    }
+  },
+  "required": ["date", "product_id", "outlet_id"]
+}

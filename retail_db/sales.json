@@ -1,0 +1,45 @@
+{
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/sales.json",
+  "$schema": "http://json-schema.org/schema",
+  "title": "retail_db.sales",
+  "description": "Sales by product by store by customer per day",
+  "properties": {
+    "date": {
+      "type": "object",
+      "description": "Sales Date",
+      "objectType": "column",
+      "sparkSQLType": "date"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "Foreign key to product dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "outlet_id": {
+      "type": "string",
+      "description": "Foreign key to outlet dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "customer_id": {
+      "type": "string",
+      "description": "Foreign key to customer dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "Units sold",
+      "objectType": "column",
+      "sparkSQLType": "int"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Gross sales revenue",
+      "objectType": "column",
+      "sparkSQLType": "double"
+    }
+  },
+  "required": ["date", "product_id", "outlet_id", "customer_id"]
+}

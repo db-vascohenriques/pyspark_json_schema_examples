@@ -1,0 +1,51 @@
+{
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/forecast.json",
+  "$schema": "http://json-schema.org/schema",
+  "title": "retail_db.forecast",
+  "description": "Forecast for sales and inventory",
+  "properties": {
+    "forecast_date": {
+      "type": "object",
+      "description": "Date for which a prediction is made",
+      "objectType": "column",
+      "sparkSQLType": "date"
+    },
+    "reporting_date": {
+      "type": "object",
+      "description": "Date at which a prediction is made",
+      "objectType": "column",
+      "sparkSQLType": "date"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "Foreign key to product dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "outlet_id": {
+      "type": "string",
+      "description": "Foreign key to outlet dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "forecast_units_sold": {
+      "type": "integer",
+      "description": "Units predicted to be sold on a given date",
+      "objectType": "column",
+      "sparkSQLType": "int"
+    },
+    "forecast_on_hand_inventory": {
+      "type": "integer",
+      "description": "Units predicted to be sold on a given date",
+      "objectType": "column",
+      "sparkSQLType": "int"
+    },
+    "forecast_gross_revenue": {
+      "type": "integer",
+      "description": "Units predicted to be sold on a given date",
+      "objectType": "column",
+      "sparkSQLType": "int"
+    }
+  },
+  "required": ["date", "product_id", "outlet_id"]
+}

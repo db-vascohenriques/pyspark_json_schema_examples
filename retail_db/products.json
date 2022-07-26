@@ -1,0 +1,51 @@
+{
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/products.json",
+  "$schema": "http://json-schema.org/schema",
+  "title": "retail_db.products",
+  "description": "Product Dimension",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "Primary key of product dimension",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "description": {
+      "type": "string",
+      "description": "Plain text product description",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category, e.g. detergent, pain-killer, toiletries",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Product brand",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "barcode": {
+      "type": "integer",
+      "description": "GS1 GTIN compliant barcode number",
+      "objectType": "column",
+      "sparkSQLType": "bigint"
+    },
+    "list_currency": {
+      "type": "string",
+      "description": "ISO4217 compliant currency code",
+      "objectType": "column",
+      "sparkSQLType": "string"
+    },
+    "list_price": {
+      "type": "number",
+      "description": "Price per unit in list currency",
+      "objectType": "column",
+      "sparkSQLType": "double"
+    }
+  },
+  "required": ["product_id"]
+}
