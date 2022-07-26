@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema",
+  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
   "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/content",
   "$vocabulary": {
     "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/content": true

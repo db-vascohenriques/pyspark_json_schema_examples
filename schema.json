@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema",
-  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema",
+  "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
+  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/schema.json",
   "$vocabulary": {
     "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/core": true,
     "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/meta/applicator": true,
@@ -35,10 +35,7 @@
       "$ref": "meta/content"
     }
   ],
-  "type": [
-    "object",
-    "boolean"
-  ],
+  "type": ["object", "boolean"],
   "$comment": "This meta-schema also defines keywords that have appeared in previous drafts in order to prevent incompatible extensions as they remain in common use.",
   "properties": {
     "definitions": {
