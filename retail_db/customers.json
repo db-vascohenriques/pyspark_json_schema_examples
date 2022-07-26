@@ -3,6 +3,8 @@
   "$schema": "http://json-schema.org/schema",
   "title": "retail_db.customers",
   "description": "Customer dimension for sales",
+  "type": "object",
+  "objectType": "table",
   "properties": {
     "customer_id": {
       "type": "string",

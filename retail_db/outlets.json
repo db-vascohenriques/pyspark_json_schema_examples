@@ -3,6 +3,8 @@
   "$schema": "http://json-schema.org/schema",
   "title": "retail_db.outlets",
   "description": "Outlet Dimension for stores, distribution centers and warehouses",
+  "type": "object",
+  "objectType": "table",
   "properties": {
     "outlet_id": {
       "type": "string",

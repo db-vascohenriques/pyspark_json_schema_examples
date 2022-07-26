@@ -3,6 +3,8 @@
   "$schema": "http://json-schema.org/schema",
   "title": "retail_db.inventory",
   "description": "Inventory by product by outlet per day",
+  "type": "object",
+  "objectType": "table",
   "properties": {
     "date": {
       "type": "object",

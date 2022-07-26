@@ -3,6 +3,8 @@
   "$schema": "http://json-schema.org/schema",
   "title": "retail_db.forecast",
   "description": "Forecast for sales and inventory",
+  "type": "object",
+  "objectType": "table",
   "properties": {
     "forecast_date": {
       "type": "object",
