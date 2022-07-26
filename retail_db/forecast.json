@@ -47,5 +47,5 @@
       "sparkSQLType": "int"
     }
   },
-  "required": ["date", "product_id", "outlet_id"]
+  "required": ["forecast_date", "reporting_date", "product_id", "outlet_id"]
 }
