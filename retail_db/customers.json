@@ -68,7 +68,7 @@
     },
     "metrics": {
       "type": "object",
-      "description": "Infinite text-based customer attributes",
+      "description": "Infinite numeric customer attributes",
       "objectType": "column",
       "sparkSQLType": "map",
       "properties": {
