@@ -1,0 +1,8 @@
+{
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/db.json",
+  "$schema": "http://json-schema.org/schema",
+  "title": "retail_db",
+  "description": "Sales by product by store by customer per day",
+  "type": "object",
+  "objectType": "database"
+}
