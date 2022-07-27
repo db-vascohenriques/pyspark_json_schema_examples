@@ -10,13 +10,13 @@
     "properties": {
       "type": "object",
       "additionalProperties": {
-        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield"
+        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield.json"
       }
     },
     "items": {
       "type": "object",
       "properties": {
-        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield"
+        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield.json"
       }
     }
   },
