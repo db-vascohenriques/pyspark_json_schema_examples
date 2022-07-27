@@ -1,0 +1,60 @@
+{
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/column.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "type": { "$ref": "#/$defs/simpleTypes" },
+    "objectType": { "const": "column" },
+    "sparkSQLType": { "$ref": "#/$defs/sparkSQLTypes" },
+    "properties": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield"
+      }
+    },
+    "items": {
+      "type": "object",
+      "properties": {
+        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield"
+      }
+    }
+  },
+  "required": ["objectType", "sparkSQLType"],
+  "$defs": {
+    "simpleTypes": {
+      "enum": [
+        "array",
+        "boolean",
+        "integer",
+        "null",
+        "number",
+        "object",
+        "string"
+      ]
+    },
+    "sparkSQLTypes": {
+      "enum": [
+        "varchar",
+        "char",
+        "string",
+        "byte",
+        "short",
+        "int",
+        "long",
+        "bigint",
+        "double",
+        "float",
+        "real",
+        "decimal",
+        "boolean",
+        "array",
+        "binary",
+        "date",
+        "timestamp",
+        "map",
+        "struct"
+      ]
+    }
+  }
+}
