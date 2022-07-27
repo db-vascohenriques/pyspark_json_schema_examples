@@ -1,0 +1,50 @@
+{
+  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/database",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "const": "object"
+    },
+    "title": {
+      "description": "The name of the database/schema to be created",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description for the database/schema",
+      "type": "string"
+    },
+    "objectType": {
+      "enum": [
+        "schema",
+        "database"
+      ]
+    },
+    "properties": {
+      "type": "object",
+      "description": "The properties for the database/schema in key-value pairs",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "default": {}
+    },
+    "location": {
+      "type": "string",
+      "description": "Path of the file system in which the specified database/schema is to be created"
+    }
+  },
+  "required": [
+    "$id",
+    "$schema",
+    "title",
+    "objectType"
+  ]
+}
