@@ -1,5 +1,5 @@
 {
-  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/tabview.json",
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/tabview",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
@@ -12,7 +12,7 @@
     "properties": {
       "type": "object",
       "additionalProperties": {
-        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/column.json"
+        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/column"
       },
       "default": {}
     },
