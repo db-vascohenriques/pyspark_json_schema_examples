@@ -1,24 +1,63 @@
 {
-  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/tabview",
+  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/tabview",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
-    "$id": { "type": "string", "format": "uri" },
-    "$schema": { "type": "string", "format": "uri" },
-    "type": { "const": "object" },
-    "title": { "type": "string" },
-    "description": { "type": "string" },
-    "objectType": { "enum": ["table", "view"] },
+    "$id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "const": "object"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "objectType": {
+      "enum": [
+        "table",
+        "view"
+      ]
+    },
     "properties": {
       "type": "object",
       "additionalProperties": {
-        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/column"
+        "$ref": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/column"
       },
       "default": {}
     },
-    "required": { "type": "array", "items": { "type": "string" } },
-    "location": { "type": "string" },
-    "format": { "enum": ["avro", "json", "csv", "parquet", "orc", "delta"] }
+    "required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location": {
+      "type": "string"
+    },
+    "format": {
+      "enum": [
+        "avro",
+        "json",
+        "csv",
+        "parquet",
+        "orc",
+        "delta"
+      ]
+    }
   },
-  "required": ["$id", "$schema", "title", "objectType", "properties"]
+  "required": [
+    "$id",
+    "$schema",
+    "title",
+    "objectType",
+    "properties"
+  ]
 }

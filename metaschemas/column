@@ -1,26 +1,37 @@
 {
-  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/column",
+  "$id": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/column",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
-    "description": { "type": "string" },
-    "type": { "$ref": "#/$defs/simpleTypes" },
-    "objectType": { "const": "column" },
-    "sparkSQLType": { "$ref": "#/$defs/sparkSQLTypes" },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "$ref": "#/$defs/simpleTypes"
+    },
+    "objectType": {
+      "const": "column"
+    },
+    "sparkSQLType": {
+      "$ref": "#/$defs/sparkSQLTypes"
+    },
     "properties": {
       "type": "object",
       "additionalProperties": {
-        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield"
+        "$ref": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/nestedfield"
       }
     },
     "items": {
       "type": "object",
       "properties": {
-        "$ref": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/metaschemas/nestedfield"
+        "$ref": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/nestedfield"
       }
     }
   },
-  "required": ["objectType", "sparkSQLType"],
+  "required": [
+    "objectType",
+    "sparkSQLType"
+  ],
   "$defs": {
     "simpleTypes": {
       "enum": [
