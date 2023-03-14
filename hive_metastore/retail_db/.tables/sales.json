@@ -1,7 +1,7 @@
 {
   "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/sales.json",
   "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/tabview",
-  "title": "retail_db.sales",
+  "title": "hive_metastore.retail_db.sales",
   "description": "Sales by product by store by customer per day",
   "type": "object",
   "objectType": "table",

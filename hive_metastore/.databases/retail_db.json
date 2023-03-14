@@ -1,0 +1,11 @@
+{
+  "title": "hive_metastore.retail_db",
+  "description": "A test database to validate using PySpark JSON Schemas",
+  "type": "object",
+  "objectType": "database",
+  "dbProperties": {
+    "Owner": "john.smith@example.com",
+    "Env": "PRD",
+    "TTL": -1
+  }
+}

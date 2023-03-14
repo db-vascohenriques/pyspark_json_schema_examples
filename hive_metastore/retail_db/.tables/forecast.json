@@ -1,14 +1,20 @@
 {
-  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/inventory.json",
+  "$id": "https://github.com/db-vascohenriques/pyspark_json_schema_examples/raw/master/retail_db/forecast.json",
   "$schema": "https://raw.githubusercontent.com/db-vascohenriques/pyspark_json_schema_examples/master/metaschemas/tabview",
-  "title": "retail_db.inventory",
-  "description": "Inventory by product by outlet per day",
+  "title": "hive_metastore.retail_db.forecast",
+  "description": "Forecast for sales and inventory",
   "type": "object",
   "objectType": "table",
   "properties": {
-    "date": {
+    "forecast_date": {
       "type": "object",
-      "description": "Inventory Date",
+      "description": "Date for which a prediction is made",
+      "objectType": "column",
+      "sparkSQLType": "date"
+    },
+    "reporting_date": {
+      "type": "object",
+      "description": "Date at which a prediction is made",
       "objectType": "column",
       "sparkSQLType": "date"
     },
@@ -24,24 +30,24 @@
       "objectType": "column",
       "sparkSQLType": "string"
     },
-    "on_hand_units": {
+    "forecast_units_sold": {
       "type": "integer",
-      "description": "Units available in store",
+      "description": "Units predicted to be sold on a given date",
       "objectType": "column",
       "sparkSQLType": "int"
     },
-    "in_transit_units": {
+    "forecast_on_hand_inventory": {
       "type": "integer",
-      "description": "Units on the way to store",
+      "description": "Predicted units on hand",
       "objectType": "column",
       "sparkSQLType": "int"
     },
-    "reserved_units": {
+    "forecast_gross_revenue": {
       "type": "integer",
-      "description": "Frozen stock by customer reservations",
+      "description": "Predicted total value of sales before tax",
       "objectType": "column",
       "sparkSQLType": "int"
     }
   },
-  "required": ["date", "product_id", "outlet_id"]
+  "required": ["forecast_date", "reporting_date", "product_id", "outlet_id"]
 }

@@ -1,0 +1,6 @@
+{
+  "title": "hive_metastore",
+  "description": "The default Spark catalog for an internal or external Hive Metastore",
+  "type": "object",
+  "objectType": "catalog"
+}
