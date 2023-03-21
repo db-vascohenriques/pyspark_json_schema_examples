@@ -1,0 +1,12 @@
+{
+  "title": "hive_metastore.default",
+  "description": "A default database to validate using PySpark JSON Schemas",
+  "type": "object",
+  "objectType": "database",
+  "dbProperties": {
+    "Owner": "john.smith@example.com",
+    "Env": "PRD",
+    "TTL": -1
+  },
+  "catalog": "hive_metastore"
+}
