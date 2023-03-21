@@ -23,12 +23,6 @@
       "sparkSQLType": "int",
       "description": null
     },
-    "gender": {
-      "type": "string",
-      "objectType": "column",
-      "sparkSQLType": "string",
-      "description": "Male, Female, Other, etc."
-    },
     "email": {
       "type": "string",
       "objectType": "column",
