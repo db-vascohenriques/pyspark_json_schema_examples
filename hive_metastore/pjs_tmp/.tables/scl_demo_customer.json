@@ -17,6 +17,12 @@
       "sparkSQLType": "string",
       "description": null
     },
+    "age": {
+      "type": "integer",
+      "objectType": "column",
+      "sparkSQLType": "int",
+      "description": null
+    },
     "email": {
       "type": "string",
       "objectType": "column",
