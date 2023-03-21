@@ -1,0 +1,29 @@
+{
+  "title": "hive_metastore.pjs_tmp.scl_demo_customer",
+  "type": "object",
+  "objectType": "table",
+  "database": "pjs_tmp",
+  "catalog": "hive_metastore",
+  "properties": {
+    "id": {
+      "type": "string",
+      "objectType": "column",
+      "sparkSQLType": "string",
+      "description": null
+    },
+    "name": {
+      "type": "string",
+      "objectType": "column",
+      "sparkSQLType": "string",
+      "description": null
+    },
+    "email": {
+      "type": "string",
+      "objectType": "column",
+      "sparkSQLType": "string",
+      "description": null
+    }
+  },
+  "required": [],
+  "format": "delta"
+}
