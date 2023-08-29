@@ -1,0 +1,35 @@
+{
+  "title": "default.e6270be779fa48249133d6ee2019b1ff",
+  "description": "Unittest table for GitTracker with uuid e6270be779fa48249133d6ee2019b1ff",
+  "type": "object",
+  "objectType": "table",
+  "database": "default",
+  "properties": {
+    "a": {
+      "type": "string",
+      "objectType": "column",
+      "sparkSQLType": "string",
+      "description": null
+    },
+    "b": {
+      "type": "integer",
+      "objectType": "column",
+      "sparkSQLType": "int",
+      "description": null
+    },
+    "c": {
+      "type": "number",
+      "objectType": "column",
+      "sparkSQLType": "double",
+      "description": null
+    },
+    "d": {
+      "type": "boolean",
+      "objectType": "column",
+      "sparkSQLType": "boolean",
+      "description": null
+    }
+  },
+  "required": [],
+  "format": "PARQUET"
+}
