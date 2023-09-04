@@ -1,0 +1,34 @@
+{
+  "title": "spark_catalog.default.86841dc2437b43018c7ba6fb73a20f19",
+  "type": "object",
+  "objectType": "table",
+  "database": "default",
+  "catalog": "spark_catalog",
+  "properties": {
+    "a": {
+      "type": "string",
+      "objectType": "column",
+      "sparkSQLType": "string",
+      "description": null
+    },
+    "b": {
+      "type": "integer",
+      "objectType": "column",
+      "sparkSQLType": "int",
+      "description": null
+    },
+    "c": {
+      "type": "number",
+      "objectType": "column",
+      "sparkSQLType": "double",
+      "description": null
+    },
+    "d": {
+      "type": "boolean",
+      "objectType": "column",
+      "sparkSQLType": "boolean",
+      "description": null
+    }
+  },
+  "required": []
+}
